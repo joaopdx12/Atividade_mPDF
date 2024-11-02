@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Produtos Eletrônicos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Relatório de Produtos Eletrônicos</h1>
+    <p>Data de geração: <?php echo date('d/m/Y H:i:s'); ?></p>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Categoria</th>
+                <th>Preço (R$)</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Fone de Ouvido Bluetooth</td>
+                <td>Eletrônicos</td>
+                <td>149,90</td>
+                <td>Fone de ouvido Bluetooth com som de alta qualidade e bateria duradoura.</td>
+            </tr>
+            <tr>
+                <td>Smartphone</td>
+                <td>Eletrônicos</td>
+                <td>1.999,90</td>
+                <td>Smartphone com tela de 6.5" e câmera de 64MP.</td>
+            </tr>
+            <tr>
+                <td>Smartwatch</td>
+                <td>Eletrônicos</td>
+                <td>699,90</td>
+                <td>Smartwatch com monitoramento de saúde e notificações inteligentes.</td>
+            </tr>
+            <tr>
+                <td>Speaker Bluetooth</td>
+                <td>Eletrônicos</td>
+                <td>299,90</td>
+                <td>Caixa de som Bluetooth portátil com qualidade de som premium.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="button-container">
+        <form action="exer5.php" method="post">
+            <button type="submit" class="button">Gerar PDF</button>
+        </form>
+    </div>
+
+</body>
+</html>
